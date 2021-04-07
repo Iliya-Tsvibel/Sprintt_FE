@@ -1,0 +1,26 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.2;
+  width: 270px;
+  height: 100vh;
+  left: -1px;
+  top: 0px;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+}
+.spotify_logo {
+  position: absolute;
+  width: 109px;
+  height: 60px;
+  left: 26px;
+  top: -5px;
+}
+
+.frame_logo {
+  position: relative;
+  width: 210px;
+  height: 58px;
+  top: 54px;
+  left: 28px;
+  background: #ffffff;
+}

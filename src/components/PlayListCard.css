@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+.container {
+  margin-top: 100px;
+}
+.out {
+  width: 147.71px;
+  height: 300px;
+}
+.topic {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 33px;
+  color: rgba(25, 20, 20, 1);
+}
+.card-image {
+  width: 147.71px;
+  height: 147.71px;
+}
+.card-image img {
+  width: 147.71px;
+  height: 147.71px;
+  border-radius: 10px;
+}
+.card-body {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+}
+.card_title {
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(25, 20, 20, 1);
+}
+.description {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(100, 100, 100, 1);
+}
+

@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+.button {
+  position: relative;
+  width: 210px;
+  height: 55px;
+  left: 25px;
+  top: 50px;
+  background: rgba(0deg, #ffffff, #ffffff);
+  border-radius: 10px;
+}
+.button:hover {
+  background: rgba(29, 185, 84, 0.15);
+}
+
+
+.button_title {
+  position: absolute;
+  padding-top: 17px;
+  padding-left: 70px;
+  width: 100%;
+  height: 21px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #191414;
+}
+.button_icon {
+  position: absolute;
+  width: 20.18px;
+  height: 21.6px;
+  padding-top: 10px;
+  padding-left: 20px;
+  border-image-source: linear-gradient(0deg, #191414, #191414),
+    linear-gradient(0deg, #191414, #191414);
+}

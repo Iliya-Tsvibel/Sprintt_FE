@@ -1,0 +1,14 @@
+body {
+  background-color: #f2f7f1;
+}
+.center {
+  text-align: center;
+}
+
+.playlist {
+  transform: translate(10%, 10%);
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
