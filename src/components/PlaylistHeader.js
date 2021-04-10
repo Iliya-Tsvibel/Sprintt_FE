@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./PlayListCard.css";
+import "./PlaylistHeader.css";
 
 const PlaylistHeader = () => {
   const [Playlist, setPlaylist] = useState([]);
   useEffect(() => {
-    let url = "https://api.sprintt.co/spotify/featured_playlists?limit=10";
+    let url = "https://api.sprintt.co/spotify/featured_playlists?limit=1";
     let token = "fa7af26c-3740-4bcb-b01d-16fff6fe520c";
     fetch(url, {
       method: "GET",
@@ -21,8 +21,7 @@ const PlaylistHeader = () => {
   }, []);
 
   return (
-    <div className="container">
-      <p className="topic">Playlist Header</p>
+    <div className="header_container">
       {Playlist.length === 0 ? (
         <div className="spinner-border" role="status">
           <span className="sr-only">Loading...</span>
@@ -30,19 +29,23 @@ const PlaylistHeader = () => {
       ) : (
         <div>
           {Playlist.map((current) => (
-            <div className="out" key={current.playlist_id}>
-              <div className="card-image">
+            <>
+              <div className="header_card-image" key={current.playlist_id}>
                 <img src={current.image_url} alt="cover" />
-                <div className="card-body">
-                  <div className="card_title">
-                    <p>{current.name}</p>
-                  </div>
-                  <div className="description">
-                    <p>{current.description}</p>
-                  </div>
-                </div>
               </div>
-            </div>
+              <div className="header_card_title">
+                <p>{current.name}</p>
+              </div>
+              <div className="header_description">
+                <p>{current.description}</p>
+              </div>
+              <div className="song_count">
+                <p>count</p>
+              </div>
+              <div className="song_duraction">
+                <p>duraction</p>
+              </div>
+            </>
           ))}
         </div>
       )}
