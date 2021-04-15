@@ -9,7 +9,7 @@ function Body() {
   return (
     <div className="body">
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/home" component={Home} />
         <Route path="/browse" component={Browse} />
         <Route path="/likedSongs" component={Favorite} />
       </Switch>

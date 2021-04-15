@@ -12,7 +12,7 @@ const Home = () => {
       <div class="sticky">
         <PlaylistHeader />
       </div>
-      {/* <div className="playlist">
+      <div className="playlist">
         <RecentlyPlayedCard />
       </div>
       <div className="playlist">
@@ -20,7 +20,7 @@ const Home = () => {
       </div>
       <div className="playlist">
         <MoodCard />
-      </div> */}
+      </div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-.button {
+.navlink {
   position: relative;
   width: 210px;
   height: 55px;
@@ -8,10 +8,12 @@
   background: rgba(0deg, #ffffff, #ffffff);
   border-radius: 10px;
 }
-.button:hover {
+.navlink:hover {
   background: rgba(29, 185, 84, 0.15);
 }
-
+.navlink_active {
+  background: rgba(29, 185, 84, 0.15);
+}
 
 .button_title {
   position: absolute;

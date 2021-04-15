@@ -13,20 +13,19 @@ const buttonIcons = {
   LikedSongs: <img src={LikedSongsIcon} alt="likedsongsIcon" />,
 };
 
-const Sidebar = () => {
+const Sidebar = (Icon) => {
   return (
     <div className="sidebar">
       <div className="frame_logo">
         <img className="spotify_logo" src={spotify_logo} alt="Spotify Logo" />
       </div>
-      {/* <Button Icon={buttonIcons.Browse} title="Browse"/> */}
-      <NavLink to="/">
+      <NavLink className="navlink" activeClassName="navlink_active" to="/home">
         <Button Icon={buttonIcons.Home} title="Home" />
       </NavLink>
-      <NavLink to="/browse">
+      <NavLink className="navlink" activeClassName="navlink_active" to="/browse">
         <Button Icon={buttonIcons.Browse} title="Browse" />
       </NavLink>
-      <NavLink to="/likedSongs">
+      <NavLink className="navlink" activeClassName="navlink_active" to="/likedSongs">
         <Button Icon={buttonIcons.LikedSongs} title="Liked songs" />
       </NavLink>
     </div>
