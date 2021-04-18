@@ -33,17 +33,19 @@ const PlaylistHeader = () => {
               <div className="header_card-image" key={current.playlist_id}>
                 <img src={current.image_url} alt="cover" />
               </div>
-              <div className="header_card_title">
-                <p>{current.name}</p>
-              </div>
-              <div className="header_description">
-                <p>{current.description}</p>
-              </div>
-              <div className="song_count">
-                <p>count</p>
-              </div>
-              <div className="song_duraction">
-                <p>duraction</p>
+              <div className="headerText">
+                <div className="header_card_title">
+                  <div>{current.name}</div>
+                </div>
+                <div className="header_description">
+                  <div>{current.description}</div>
+                </div>
+                <div className="song_count">
+                  <div>count</div>
+                </div>
+                <div className="song_duraction">
+                  <div>duraction</div>
+                </div>
               </div>
             </>
           ))}
