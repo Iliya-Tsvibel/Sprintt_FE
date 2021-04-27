@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+.PlaylistTab {
+  font-family: Rubik;
+}
+.filter {
+  width: 75px;
+  height: 24px;
+  left: 387px;
+  top: 257px;
+}
+.filter-text {
+  width: 41px;
+  height: 21px;
+  left: 421px;
+  top: 260px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  background: rgba(241, 247, 241);
+}
+.filter-icon {
+  position: absolute;
+  width: 20.18px;
+  height: 21.6px;
+  padding-top: 10px;
+  padding-left: 20px;
+  border-image-source: linear-gradient(0deg, #191414, #191414),
+    linear-gradient(0deg, #191414, #191414);
+}
+.theader {
+  text-align: justify;
+  height: 26px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #191414;
+}
+/* .test {
+  top: 319px;
+} */
+
+.tbody {
+  text-align: justify;
+  height: 26px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #191414;
+}
