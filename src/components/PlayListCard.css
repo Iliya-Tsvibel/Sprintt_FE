@@ -29,13 +29,14 @@
   font-weight: normal;
 }
 .card_title {
+  position: relative;
   font-size: 18px;
   line-height: 21px;
   color: rgba(25, 20, 20, 1);
 }
 .description {
+  position: relative;
   font-size: 14px;
   line-height: 17px;
   color: rgba(100, 100, 100, 1);
 }
-

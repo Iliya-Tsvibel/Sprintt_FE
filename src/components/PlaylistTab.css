@@ -29,7 +29,6 @@
     linear-gradient(0deg, #191414, #191414);
 }
 .theader {
-  text-align: justify;
   height: 26px;
   font-style: normal;
   font-weight: 300;
@@ -37,16 +36,20 @@
   line-height: 26px;
   color: #191414;
 }
-/* .test {
-  top: 319px;
-} */
 
 .tbody {
-  text-align: justify;
   height: 26px;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
   color: #191414;
+}
+
+td {
+  border-bottom: 1px solid #646464;
+  width: 700px;
+}
+tb {
+  border-bottom: 0.5px solid #646464;
 }

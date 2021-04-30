@@ -2,6 +2,12 @@ import React, { useState, useEffect } from "react";
 import "./PlaylistHeader.css";
 
 const PlaylistHeader = () => {
+  const dataHeader = [
+    {
+      total_songs: 50,
+      total_time: "3 hr, 2 min",
+    },
+  ];
   const [Playlist, setPlaylist] = useState([]);
   useEffect(() => {
     let url = "https://api.sprintt.co/spotify/featured_playlists?limit=1";
@@ -41,10 +47,10 @@ const PlaylistHeader = () => {
                   <div>{current.description}</div>
                 </div>
                 <div className="song_count">
-                  <div>count</div>
+                  <div>{dataHeader.map(block => block.total_songs)} songs</div>
                 </div>
                 <div className="song_duraction">
-                  <div>duraction</div>
+                  <div>{dataHeader.map(block => block.total_time)}</div>
                 </div>
               </div>
             </>
